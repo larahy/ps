@@ -1,0 +1,43 @@
+header {
+	font-size: 30px;
+	font-family: 'Special Elite'
+}
+
+nav {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	padding-top: 23px;
+	padding-bottom: 23px;
+	font-size: 20px;
+	font-family: 'Special Elite'
+}
+
+ul {
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#top {
+	padding-top: 2%;
+	font-size: 30px;
+	font-family: 'Special Elite'
+}
+
+h1 {
+	font-size: 14px;
+	font-family: 'Special Elite'
+}
+
+p {
+	font-size: 11px;
+	font-family: 'Special Elite'
+}
+#latin {
+	padding-top: 3%;
+}
+

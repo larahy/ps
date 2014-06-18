@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		<link href="stylesheets/onepcssgrid.css" rel="stylesheet">
+		<link href="stylesheets/overrides.css" rel="stylesheet">
+</head>
+<body>
+	<div class="onepcssgrid-1000">
+
+			<div class="onerow">
+				<header id="header" class="col12">
+						<h1>Pandora Sykes</h1>
+				</header>
+			</div>
+
+			<nav id="navigation" class="col12">
+				<ul id="nav" class="col12">
+					<li id="nav" class="col2"><a href="http://bertabernad.com/category/bb/">BB WEARS</a></li>
+					<li id="nav" class="col2"><a href="http://bertabernad.com/category/lifestyle/">Lifestyle</a></li>
+					<li id="nav" class="col2"><a href="http://bertabernad.com/category/friends/">FRIENDS</a></li>
+					<li id="nav" class="col2"><a href="http://bertabernad.com/category/films/">FILMS</a></li>
+					<li id="nav" class="col2"><a href="http://bertabernad.com/category/projetcs/">Collaborations</a></li>
+				</ul>
+			</nav>
+			<div class="onerow">
+				<br>
+			</div>
+	<%= yield %>
+</div>
+
+</body>
+</html>
