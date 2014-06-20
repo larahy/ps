@@ -1,6 +1,12 @@
 
-<div class="col-md-5">
+<div class="col4">
     <h1><%= link_to article.title, article %></h1>
     <p><%= truncate article.content, length:100 %></p>
- </div>
+</div>
+
+    <div class="images">
+    	<% article.images.each do |image| %>
+      	<%= image_tag image.photo.url(:large) %>
+      	<%end%>
+	</div>
 

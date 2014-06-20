@@ -10,14 +10,24 @@
   </div>
 <% end %>
 
-<%= form_for @article, html: {multipart: true} do |form| %>
-  <%= form.label :title %>
-  <%= form.text_field :title %>
+<%= form_for @article, html: {multipart: true} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
 
   <br>
-  <%= form.label :content %>
-  <%= form.text_area :content %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
 
- <%= form.submit 'Save' %>
+  <br>
+
+ <%= f.fields_for :images do |builder| %>
+ 
+  <div class="field">
+    <%= builder.label :photo %><br/>
+    <%= builder.file_field :photo, :rows => 3 %>
+  </div>
+<% end -%>
+
+ <%= f.submit 'Save' %>
 
 <% end %>
